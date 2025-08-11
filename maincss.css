@@ -1,0 +1,84 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Header */
+header {
+    text-align: center;
+    background-color: #1a73e8;
+    color: white;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.2em;
+}
+
+/* Trainer Section */
+.trainer-section {
+    padding: 30px;
+    text-align: center;
+}
+
+.trainer-section h2 {
+    margin-bottom: 20px;
+}
+
+/* Trainer Cards */
+.trainers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.trainer-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    width: 280px;
+    padding: 15px;
+    transition: transform 0.3s ease;
+}
+
+.trainer-card:hover {
+    transform: scale(1.05);
+}
+
+.trainer-card img {
+    width: 50%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.trainer-card h3 {
+    margin: 15px 0 5px;
+    color: #1a73e8;
+}
+
+.trainer-card p {
+    margin: 5px 0;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #1a73e8;
+    color: white;
+    margin-top: 30px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .trainers {
+        flex-direction: column;
+        align-items: center;
+    }
+}
